@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "title": "卡拉马佐夫：良心之罪",
+    "subtitle": "THE KARAMAZOV: CRIME OF CONSCIENCE",
+    "based_on": "陀思妥耶夫斯基《卡拉马佐夫兄弟》"
+  },
+  "characters": {
+    "alyosha": {
+      "id": "alyosha",
+      "name": "阿辽沙",
+      "fullName": "阿列克谢·费奥多罗维奇·卡拉马佐夫",
+      "role": "见习修士，最小的弟弟",
+      "states": { "faith": 80, "reason": 40, "passion": 20, "conscience": 75, "doubt": 25, "despair": 10 }
+    },
+    "ivan": {
+      "id": "ivan",
+      "name": "伊万",
+      "fullName": "伊万·费奥多罗维奇·卡拉马佐夫",
+      "role": "理性主义者，二兄",
+      "states": { "faith": 10, "reason": 95, "passion": 30, "conscience": 60, "doubt": 80, "despair": 45 }
+    },
+    "dmitri": {
+      "id": "dmitri",
+      "name": "德米特里",
+      "fullName": "德米特里·费奥多罗维奇·卡拉马佐夫",
+      "role": "退役军官，长兄",
+      "states": { "faith": 30, "reason": 20, "passion": 90, "conscience": 50, "doubt": 30, "despair": 40 }
+    },
+    "smerdyakov": {
+      "id": "smerdyakov",
+      "name": "斯麦尔佳科夫",
+      "fullName": "巴维尔·费奥多罗维奇·斯麦尔佳科夫",
+      "role": "仆人，私生子",
+      "states": { "faith": 5, "reason": 70, "passion": 20, "conscience": 10, "doubt": 15, "despair": 60 }
+    },
+    "fyodor": {
+      "id": "fyodor",
+      "name": "老卡拉马佐夫",
+      "fullName": "费奥多尔·巴甫洛维奇·卡拉马佐夫",
+      "role": "父亲，地主",
+      "states": { "faith": 0, "reason": 60, "passion": 85, "conscience": 5, "doubt": 0, "despair": 0 }
+    },
+    "zosima": {
+      "id": "zosima",
+      "name": "佐西马长老",
+      "fullName": "佐西马长老",
+      "role": "修道院长老",
+      "states": { "faith": 100, "reason": 50, "passion": 5, "conscience": 100, "doubt": 0, "despair": 0 }
+    }
+  },
+  "stateLabels": {
+    "faith": "信仰",
+    "reason": "理性",
+    "passion": "激情",
+    "conscience": "良知",
+    "doubt": "怀疑",
+    "despair": "绝望"
+  },
+  "stateDescriptions": {
+    "faith": "对上帝和人类之善的信念",
+    "reason": "逻辑和分析的能力",
+    "passion": "欲望和冲动的强度",
+    "conscience": "道德自省的能力",
+    "doubt": "对既有信念的动摇",
+    "despair": "精神崩溃的倾向"
+  }
+}
