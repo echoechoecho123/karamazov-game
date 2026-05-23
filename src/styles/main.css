@@ -55,7 +55,7 @@ body {
 .start-ornament.bottom { margin-top: 24px; }
 
 .start-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 6vw, 3.8rem);
   font-weight: 900;
   letter-spacing: 0.3em;
   background: linear-gradient(180deg, var(--red-light), var(--red-dark) 50%, #2a0000);
@@ -138,7 +138,7 @@ body {
 }
 
 .scene-title {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   font-weight: 700;
   color: var(--white);
 }
@@ -187,7 +187,7 @@ body {
 
 .speaker-name {
   display: block;
-  font-size: 0.8rem;
+  font-size: clamp(0.65rem, 1.2vw, 0.85rem);
   color: var(--text-muted);
   letter-spacing: 0.2em;
   margin-bottom: 6px;
@@ -203,7 +203,7 @@ body {
 .speaker-narrator { border-left-color: transparent; }
 
 .line-text {
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 2;
   color: var(--text);
 }
@@ -256,7 +256,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
   line-height: 1.7;
   transition: all 0.3s;
   color: var(--text-muted);
@@ -437,120 +437,6 @@ body {
   font-style: italic;
 }
 
-.investigation-tabs {
-  display: flex;
-  gap: 0;
-  margin-bottom: 24px;
-}
-
-.investigation-tabs button {
-  padding: 10px 32px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  font-family: var(--font);
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.investigation-tabs button:first-child { border-radius: 4px 0 0 4px; }
-.investigation-tabs button:last-child { border-radius: 0 4px 4px 0; }
-.investigation-tabs button.active { border-color: var(--red-dark); color: var(--red-light); background: rgba(196,30,58,0.05); }
-.investigation-tabs button:disabled { opacity: 0.3; cursor: not-allowed; }
-
-/* Evidence Map */
-.evidence-map {
-  position: relative;
-  height: 320px;
-  background: radial-gradient(ellipse at center, #1a0a0a, var(--bg));
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.evidence-node {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-  padding: 8px;
-}
-
-.evidence-node:hover { transform: translate(-50%, -50%) scale(1.15); }
-
-.evidence-icon {
-  font-size: 1.5rem;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-.evidence-node.collected .evidence-icon { opacity: 1; color: var(--red-light); }
-
-.evidence-label {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-}
-.evidence-node.collected .evidence-label { color: var(--red-light); }
-
-/* Evidence Detail */
-.evidence-detail { margin-bottom: 20px; }
-
-.evidence-name {
-  font-size: 1.2rem;
-  color: var(--white);
-  margin-bottom: 4px;
-}
-.evidence-location {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-}
-
-.evidence-card {
-  padding: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  margin-bottom: 8px;
-  font-size: 0.85rem;
-  line-height: 1.8;
-}
-
-.evidence-card.deep {
-  border-left: 3px solid var(--red-dark);
-}
-
-.evidence-tag {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 2px 10px;
-  border: 1px solid var(--red-dark);
-  border-radius: 3px;
-  font-size: 0.7rem;
-  color: var(--red-light);
-}
-
-.collect-btn {
-  padding: 8px 24px;
-  background: transparent;
-  border: 1px solid var(--red-dark);
-  color: var(--red-light);
-  font-family: var(--font);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.collect-btn:hover { background: rgba(196,30,58,0.15); }
-
-.evidence-count {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  padding: 12px;
-}
-
 /* ===== PHILOSOPHY CHAINS ===== */
 .philosophy-phase { }
 
@@ -718,7 +604,7 @@ body {
 }
 
 .guilt-label {
-  font-size: 1.05rem;
+  font-size: clamp(0.9rem, 2vw, 1.15rem);
   color: var(--white);
   font-weight: 700;
 }
@@ -763,7 +649,7 @@ body {
 
 .guilt-reason {
   font-size: 0.7rem;
-  color: var(--gold);
+  color: var(--red-light);
   margin-top: 3px;
   font-style: italic;
   opacity: 0.85;
@@ -819,7 +705,7 @@ body {
 .ending-ornament { color: var(--red); font-size: 24px; opacity: 0.4; }
 
 .ending-title {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
   color: var(--red-light);
   letter-spacing: 0.2em;
 }
@@ -829,7 +715,7 @@ body {
 .ending-text {
   max-width: 550px;
   line-height: 2.4;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 1.8vw, 1.1rem);
   color: var(--text);
   font-style: italic;
   margin-bottom: 8px;
@@ -903,7 +789,7 @@ body {
 }
 
 .fate-text {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
   line-height: 1.9;
   color: var(--text);
 }
